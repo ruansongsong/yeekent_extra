@@ -1,0 +1,31 @@
+{
+  "name": "yeekent_extra",
+  "version": "1.0.0",
+  "description": "Some extra pages about yeekent",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruansongsong/yeekent_extra.git"
+  },
+  "author": "ruansongsong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ruansongsong/yeekent_extra/issues"
+  },
+  "homepage": "https://github.com/ruansongsong/yeekent_extra#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-header": "^1.8.7",
+    "gulp-less": "^3.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "less": "^2.7.1"
+  }
+}

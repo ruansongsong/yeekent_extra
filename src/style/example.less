@@ -1,0 +1,75 @@
+.container{
+  position: relative;
+  padding-bottom: 44px;
+}
+.home-image{
+  position: relative;
+  width: 100%;
+  img{
+    width: 100%;
+    box-shadow: 0 2px 3px #aaa;
+  }
+  .home-info{
+    position: absolute;
+    padding: 10px;
+    margin-top: -110px;
+    margin-left: -110px;
+    top: 50%;
+    left:50%;
+    width: 220px;
+    height: 220px;
+    background: rgba(241, 241, 241, .6);
+    border: 4px rgba(241, 241, 241fff, .6) solid;
+    box-sizing: border-box;
+    background-clip: content-box;
+    .hospital-info{
+      font-size: 18px;
+      color: @globalTextColor;
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 1px #fff solid;
+      p{
+        padding: 5px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .hospital-meta{
+      font-size: 16px;
+      color: @globalTextColor;
+      text-align: center;
+      padding: 20px 0;
+      p{
+        padding: 5px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+.home-button{
+  position: absolute;
+  margin-left: -50px;
+  left: 50%;
+  bottom: -50px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  background: #d99694;
+  border: 2px #fff solid;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  font-size: 16px;
+}
+.home-intro{
+  margin-top: 60px;
+  font-size: 16px;
+  color: @globalTextColor;
+  text-align: center;
+  padding: 10px 0;
+}
