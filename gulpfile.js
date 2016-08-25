@@ -28,7 +28,7 @@ gulp.task('less', function () {
 	.pipe(rename(function (path) {
 		path.basename += '.min';
 	}))
-	.pipe(gulp.dest('dist/style'))
+	.pipe(gulp.dest('../workspace/source/MedicalOprationWeb/PregnancyTest/static/css/'))
 	.pipe(browserSync.reload({stream: true}));
 });
 

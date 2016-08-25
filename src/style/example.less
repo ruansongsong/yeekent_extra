@@ -29,7 +29,6 @@
       padding: 20px 0;
       border-bottom: 1px #fff solid;
       p{
-        padding: 5px 0;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -41,7 +40,6 @@
       text-align: center;
       padding: 20px 0;
       p{
-        padding: 5px 0;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -67,9 +65,73 @@
   font-size: 16px;
 }
 .home-intro{
-  margin-top: 60px;
+  margin-top: 50px;
   font-size: 16px;
   color: @globalTextColor;
   text-align: center;
   padding: 10px 0;
+}
+
+// 第二个页面
+.default{
+  background: #fbf9fe;
+}
+.intro{
+  padding:  15px;
+  color: @globalTextColor;
+  font-size: 14px;
+  text-align: justify;
+  p {
+    text-align: center;
+  }
+  .detail{
+    text-align: justify;
+  }
+
+}
+// 选择
+.choose-help{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 15px;
+	.choose-help-left{
+		color: #888;
+		.weui_cells_checkbox{
+			i {
+				display: inline-block;
+			}
+		}
+		span {
+			display: inline-block;
+			vertical-align: super;
+		}
+	}
+	.choose-help-right{
+		color: #888;
+	}
+}
+.weui_cells{
+  margin-top: 0;
+}
+.weui_cell svg{
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+  vertical-align: text-bottom;
+}
+.pay-info{
+  padding-top: 20px;
+  color: @globalTextColor;
+  font-size: 14px;
+  text-align: center;
+  span {
+    color: #F44;
+    font-size: 20px;
+  }
+}
+footer{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: @globalTextColor;
 }
