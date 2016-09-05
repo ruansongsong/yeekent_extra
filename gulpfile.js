@@ -15,7 +15,7 @@ var banner =
 * version" + pkg.version + "\n\
 * author ruansongsong\n\
 */\n";
-gulp.task('less', function () {
+gulp.task('lessed', function () {
 	gulp.src('src/style/common.less')
 	.pipe(sourcemaps.init())
 	.pipe(less())
@@ -31,7 +31,22 @@ gulp.task('less', function () {
 	.pipe(gulp.dest('../workspace/source/MedicalOprationWeb/PregnancyTest/static/css/'))
 	.pipe(browserSync.reload({stream: true}));
 });
-
+gulp.task('less', function () {
+	gulp.src('src/style/common.less')
+	.pipe(sourcemaps.init())
+	.pipe(less())
+	.pipe(postcss([autoprefixer(['ios >= 7', 'android >= 4.1'])]))
+	.pipe(header(banner))
+	.pipe(cssnano({
+            zindex: false,
+            autoprefixer: false
+        }))
+	.pipe(rename(function (path) {
+		path.basename += '.min';
+	}))
+	.pipe(gulp.dest('./dist/style/'))
+	.pipe(browserSync.reload({stream: true}));
+});
 gulp.task('watch', function() {
     gulp.watch('src/**/*', ['less']);
     gulp.watch("dist/example/*.html").on('change', reload);
