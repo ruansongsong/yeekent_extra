@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>医生查询</title>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <meta name="format-detection" content="telephone=no" />
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <link rel="stylesheet" href="../style/weui.min.css" charset="utf-8">
+      <link rel="stylesheet" href="../style/weui-extend.min.css" charset="utf-8">
+      <link rel="stylesheet" href="../style/jquery-weui.min.css" charset="utf-8">
+      <style>
+        .nav-bar-top{
+          top: 0;
+        }
+        .nav-bar-item input{
+          text-align: center;
+          color: #989899;
+        }
+        .feed-bd-three{
+          padding-top: 40px;
+        }
+      </style>
+  </head>
+
+  <body>
+    <div class="nav-bar nav-bar-top">
+  		<div class="nav-bar-item">
+        <input class="weui_input" id="area" type="text" value="" placeholder="地区">
+      </div>
+  		<div class="nav-bar-item"><input class="weui_input" id="disease" type="text" value="" placeholder="疾病"></div>
+      <div class="nav-bar-item"><input class="weui_input" id="department" type="text" value="" placeholder="科室"></div>
+  	</div>
+    <div class="feed-bd-three">
+
+
+		<div class="feed-item feed-item-two-columns">
+			<div class="feed-item-first-column">
+			<div class="feed-item-left">
+				<img src="../images/head.jpg">
+			</div>
+			<div class="feed-item-middle">
+        <div class="middle-title">牛一刀</div>
+        <div class="middle-extra-meta">小儿外科  主任医生</div>
+        <div class="middle-extra-meta">广东省人民医院</div>
+			</div>
+			</div>
+			<div class="feed-item-second-column">
+				<span>擅长：新生儿外科疾病，小儿肛肠，肝胆外科，多种疾病的微创手术。
+</span>
+			</div>
+		</div>
+    <div class="feed-item feed-item-two-columns">
+      <div class="feed-item-first-column">
+      <div class="feed-item-left">
+        <img src="../images/head.jpg">
+      </div>
+      <div class="feed-item-middle">
+        <div class="middle-title">牛一刀</div>
+        <div class="middle-extra-meta">小儿外科  主任医生</div>
+        <div class="middle-extra-meta">广东省人民医院</div>
+      </div>
+      </div>
+      <div class="feed-item-second-column">
+        <span>擅长：新生儿外科疾病，小儿肛肠，肝胆外科，多种疾病的微创手术</span>
+      </div>
+    </div>
+
+	</div>
+    <script src="../js/jquery-2.1.4.js"></script>
+    <script src="../js/jquery-weui.min.js"></script>
+
+
+    <script>
+      $("#area").picker({
+        title: "请选择地区",
+        cols: [
+          {
+            textAlign: 'center',
+            values: ['广州', '深圳']
+          }
+        ],
+        onChange: function(p, v, dv) {
+          console.log(p, v, dv);
+        },
+        onClose: function(p, v, d) {
+          console.log("close");
+        }
+      });
+      $("#disease").picker({
+        title: "请选择疾病",
+        cols: [
+          {
+            textAlign: 'center',
+            values: ['头疼', '无力', '失眠']
+          }
+        ],
+        onChange: function(p, v, dv) {
+          console.log(p, v, dv);
+        },
+        onClose: function(p, v, d) {
+          console.log("close");
+        }
+      });
+      $("#department").picker({
+        title: "请选择科室",
+        cols: [
+          {
+            textAlign: 'center',
+            values: ['儿科', '妇产科', '外科']
+          }
+        ],
+        onChange: function(p, v, dv) {
+          console.log(p, v, dv);
+        },
+        onClose: function(p, v, d) {
+          console.log("close");
+        }
+      });
+    </script>
+  </body>
+</html>
