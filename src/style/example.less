@@ -1,7 +1,10 @@
-@textColor: rgb(89, 89, 89);
+@textColor: #b7b7b7;
 .container{
   position: relative;
   padding-bottom: 44px;
+}
+.home-top-border{
+  border-top: 18px solid #fad3d0;
 }
 .home-image{
   position: relative;
@@ -13,22 +16,20 @@
   .home-info{
     position: absolute;
     padding: 10px;
-    margin-top: -110px;
-    margin-left: -110px;
+    margin-top: -140px;
+    margin-left: -140px;
     top: 50%;
     left:50%;
-    width: 220px;
-    height: 220px;
-    background: rgba(217, 217, 217, .75);
-    border: 4px rgba(242, 242, 242, .75) solid;
+    width: 280px;
+    height: 280px;
+    background: rgba(250, 211, 208, .3);
     box-sizing: border-box;
     background-clip: content-box;
     .hospital-info{
       font-size: 18px;
-      color: @textColor;
+      color: #5d5d5d;
       text-align: center;
       padding: 20px 0;
-      border-bottom: 1px #fff solid;
       p{
         overflow: hidden;
         text-overflow: ellipsis;
@@ -36,8 +37,8 @@
       }
     }
     .hospital-meta{
-      font-size: 16px;
-      color: @textColor;
+      font-size: 22px;
+      color: #e48a75;
       text-align: center;
       padding: 20px 0;
       p{
@@ -57,7 +58,7 @@
   width: 100px;
   height: 100px;
   box-sizing: border-box;
-  background: #d99694;
+  background: #d59f9f;
   border: 2px #fff solid;
   border-radius: 50%;
   text-align: center;
@@ -68,7 +69,7 @@
 .home-intro{
   margin-top: 50px;
   font-size: 16px;
-  color: @textColor;
+  color: #b7b7b7;
   text-align: center;
   padding: 10px 0;
 }
@@ -138,4 +139,87 @@ footer{
 }
 .no-duty{
   float: right;
+}
+//测评完成页面
+.msg{
+  margin-top: 30px;
+  .title-image{
+    width: 52px;
+  }
+}
+
+.triangle-down {
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid #fbe0df;
+}
+.weui_msg .weui_msg_title {
+  color: #726f6f;
+}
+// 快速预约
+.header{
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .header-intro{
+    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(221, 221, 221, .5);
+    p{
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      font-size: 14px;
+      color: #09B045;
+    }
+  }
+}
+// 好运大健康
+html, body{
+  height: 100%;
+  width: 100%;
+}
+.complete-body{
+  position: relative;
+  background: #FFFBFA;
+}
+.complete{
+  position: absolute;
+  top: 5%;
+  left:5%;
+  width: 90%;
+  height: 90%;
+  background: #f8f0ee;
+  border-radius: 4px;
+  text-align: center;
+  img {
+    padding: 20px 0;
+    display: inline-block;
+    width: 80px;
+  }
+  .complete-intro{
+    padding: 10px 0;
+    p{
+      color: #5e6063;
+      font-size: 20px;
+    }
+  }
+  .complete-slogan{
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    p{
+      text-align: center;
+      color: #888888;
+      font-size: 20px;
+    }
+  }
+
 }

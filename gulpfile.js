@@ -28,7 +28,7 @@ gulp.task('lessed', function () {
 	.pipe(rename(function (path) {
 		path.basename += '.min';
 	}))
-	.pipe(gulp.dest('../workspace/source/MedicalOprationWeb/PregnancyTest/static/css/'))
+	.pipe(gulp.dest('../../workspace/Source/MedicalOprationWeb/PregnancyTest/static/css/'))
 	.pipe(browserSync.reload({stream: true}));
 });
 gulp.task('less', function () {
